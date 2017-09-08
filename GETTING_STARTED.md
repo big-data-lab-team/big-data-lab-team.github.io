@@ -7,6 +7,7 @@ Get familiar with the following technologies asap:
 * [bash](https://www.gnu.org/software/bash) scripting (on Linux or OSX): https://www.shellscript.sh
 * [Docker](http://www.docker.io): https://docs.docker.com/get-started
 * [Git](https://git-scm.com): https://rogerdudler.github.io/git-guide/
+* [GitHub](http://github.com)
 * [Latex](https://www.latex-project.org) and [Bibtex](http://www.bibtex.org)
 * ssh
 
@@ -26,7 +27,7 @@ your research. As such it requires first-class attention.
 Any code 
 in the lab is by default:
 * In a Git repository.
-* On Github (perhaps on GitLab in the future since [GitHub is a proprietary service](https://mikegerwitz.com/about/githubbub).)
+* On GitHub.
 * Hosted under the [/bin](https://github.com/big-data-lab-team) organization.
 * Licensed under GPL-3.0 ([Free
 Software](https://www.gnu.org) is good) or MIT (for a library).
@@ -64,13 +65,14 @@ output in papers or theses. But good writing takes time, practice, and good tool
 * Write with Latex by default, possibly with Google Docs in case heavy collaboration is expected (e.g., brainstorming document).
 * Create a Git repository for papers, containing:
    * The Latex/Bibtex source.
-   * Any script (e.g. [Gnuplot](http://www.gnuplot.info)) and data required to reproduce Figures. You might loose a few hours cleaning up your scripts but it will save you days when you need to update your manuscript. 
+   * Any script (e.g. [Gnuplot](http://www.gnuplot.info)) and data required to reproduce Figures. You might loose a few hours cleaning up your scripts but it will save you days when you need to update your manuscript.
+   * See example [here](https://github.com/big-data-lab-team/paper-sequential-split-merge).
 * Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).
 
 # Interactions in the lab
 * Never hesitate to ask a question to anyone.
 * Register to [Slack](https://big-data-lab-team.slack.com) (in the future me might use [Mattermost](https://about.mattermost.com) instead).
-* Share information with others in the lab. Including ideas, code snippets, technical tips, etc Your co-workers are not your competitors. You are on the same side.
+* Share information with others in the lab. Including ideas, code snippets, technical tips, etc Your co-workers are not your competitors, you are on the same side.
 * Communicate regularly with Tristan. On Slack, by email or by requesting a meeting whenever required. Don't let any issue block your work or bother you for too long without talking about it.
 
 # Code of Conduct
