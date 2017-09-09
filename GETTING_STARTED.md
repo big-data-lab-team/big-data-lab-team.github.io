@@ -29,7 +29,7 @@ This section is largely copied from [Whitaker's lab Code of Conduct](https://git
 * Work hours: The hours that members of the lab choose to work is up to them. We are each welcome to send work-related emails, pull requests or Slack messages over the weekend or late at night, but no lab members are required to reply to them outside of their typical work hours. Lab members are welcome to work flexibly for any reason. Ideally, all lab members will have at least a few hours each week to overlap with Tristan in order to stay in touch, but it is the policy of the lab that every member is already self-motivated and doesn't need to work a traditional 9 to 5 day in order to meet their goals.
 * If you experience any challenges of any kind related those topics, please contact Tristan. All communication will be treated as confidential.
 
-# Academic integrity
+## Academic integrity
 * Data, code and text sharing through Git repositories hosted on GitHub is a good way to protect yourself against [scientific fraud](https://en.wikipedia.org/wiki/Scientific_misconduct). Having others regularly reviewing your own PRs to your own repositories is even better.
 * Reusing text or code from others' work is fine (even encouraged) as long as the source is properly credited. Omitting to cite the source is plagiarism.
 * Data fabrication or falsification is evil. Don't even think about it. If your data looks strange, don't delete or omit it. Repeat the experiment and try to understand what is going on, you will learn more. If your graph is missing a point or two and the submission deadline is coming too soon, let the graph be incomplete. You will feel better and it will improve the paper. There is no such things as a good or a bad result, there are just results.
