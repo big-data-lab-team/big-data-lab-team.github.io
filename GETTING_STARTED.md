@@ -106,7 +106,7 @@ output in papers or theses. But good writing takes time, practice, and good tool
    * See example [here](https://github.com/big-data-lab-team/paper-sequential-split-merge).
 * Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).
 
-## Experiments
+## Experimentation
 
 Most of your papers will be based on experiments conducted with your
 developed software. Be meticulous and patient, it takes time to get a good experimental setup. Make yours this quote by David Donoho et al (2009):
