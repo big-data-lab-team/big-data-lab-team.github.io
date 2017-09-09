@@ -117,5 +117,5 @@ the awareness that mistakes and self-delusion can creep in absolutely anywehere
 
 and that the scientits' effort is primarily expended in recognizing and rooting out error. 
 ```
-In other words, think of all possible causes that might corrupt your results: background tasks running on computers, software bugs, data corruption due to overwrites, etc
+In other words, think of all possible causes that might corrupt your results: background tasks running on computers, software bugs, data corruption, etc
 
