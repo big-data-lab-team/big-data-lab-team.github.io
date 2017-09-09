@@ -111,7 +111,11 @@ output in papers or theses. But good writing takes time, practice, and good tool
 Most of your papers will be based on experiments conducted with your
 developed software. Be meticulous and patient, it takes time to get a good experimental setup. Make yours this quote by David Donoho et al (2009):
 ```
-the scientific method's central motivation is the ubiquity of error - the awareness that mistakes and self-delusion can creep in absolutely anywehere and that the scientits' effort is primarily expended in recognizing and rooting out error. 
+the scientific method's central motivation is the ubiquity of error -
+
+the awareness that mistakes and self-delusion can creep in absolutely anywehere
+
+and that the scientits' effort is primarily expended in recognizing and rooting out error. 
 ```
 In other words, think of all possible causes that might corrupt your results: background tasks running on computers, software bugs, data corruption due to overwrites, etc
 
