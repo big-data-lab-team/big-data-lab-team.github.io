@@ -1,7 +1,20 @@
-Welcome to the lab! Here are some
-resources and tips to help you get started.
+Welcome to the lab! Here are some information, resources and tips to
+help you get started.
 
-# Preliminaries
+# Core Values
+
+Content-wise, the lab is committed to the following values:
+1. High quality is
+preferable to high quantity.
+2. Technical quality is a requirement to
+scientific quality.
+3. Openness creates better content.
+
+The target lab culture is to promote frequent informal interactions,
+flexible work hours, academic integrity, gender equality, cultural
+diversity and ... having fun doing research!
+
+# Technologies
 
 Get familiar with the following technologies asap:
 * [bash](https://www.gnu.org/software/bash) scripting (on Linux or OSX): https://www.shellscript.sh
@@ -69,11 +82,12 @@ output in papers or theses. But good writing takes time, practice, and good tool
    * See example [here](https://github.com/big-data-lab-team/paper-sequential-split-merge).
 * Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).
 
-# Interactions in the lab
+# Communication and Interactions
 * Never hesitate to ask a question to anyone.
 * Register to [Slack](https://big-data-lab-team.slack.com) (in the future me might use [Mattermost](https://about.mattermost.com) instead).
 * Share information with others in the lab. Including ideas, code snippets, technical tips, etc Your co-workers are not your competitors, you are on the same side.
 * Communicate regularly with Tristan. On Slack, by email or by requesting a meeting whenever required. Don't let any issue block your work or bother you for too long without talking about it.
+* Attend hackathons, in particular those organized by [BrainHack](http://brainhack.org) in Montreal. Use hackathons to demonstrate your project, collect feedback on it, and stay up-to-date on technology.     
 
 # Code of Conduct
 This section is largely copied from [Whitaker's lab Code of Conduct](https://github.com/WhitakerLab/Onboarding/blob/master/CODE_OF_CONDUCT.md).
