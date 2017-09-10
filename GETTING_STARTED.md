@@ -1,9 +1,9 @@
 Welcome to the lab! Here are some information, resources and tips to
 help you get started.
 
-# Lab Culture and Soft Skills
+# Lab culture
 
-## Core Values
+## Core values
 
 Content-wise, the lab is committed to the following values:
 1. High quality is
@@ -16,14 +16,14 @@ The target lab culture is to promote frequent informal interactions,
 flexible work hours, academic integrity, gender equality, cultural
 diversity and ... having fun doing research!
 
-## Communication and Interactions
+## Communication and interactions
 * Never hesitate to ask a question to anyone.
 * Register to [Slack](https://big-data-lab-team.slack.com) (in the future me might use [Mattermost](https://about.mattermost.com) instead).
 * Share information with others in the lab. Including ideas, code snippets, technical tips, etc Your co-workers are not your competitors, you are on the same side.
 * Communicate regularly with Tristan. On Slack, by email or by requesting a meeting whenever required. Don't let any issue block your work or bother you for too long without talking about it.
 * Attend hackathons, in particular those organized by [BrainHack](http://brainhack.org) in Montreal. Use hackathons to demonstrate your project, collect feedback on it, and stay up-to-date on technology.     
 
-## Code of Conduct
+## Code of conduct
 This section is largely copied from [Whitaker's lab Code of Conduct](https://github.com/WhitakerLab/Onboarding/blob/master/CODE_OF_CONDUCT.md).
 * Harassment by and/or of members of our community in any form will not be tolerated. Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of discussions, inappropriate physical contact, and unwelcome sexual attention.
 * Work hours: The hours that members of the lab choose to work is up to them. We are each welcome to send work-related emails, pull requests or Slack messages over the weekend or late at night, but no lab members are required to reply to them outside of their typical work hours. Lab members are welcome to work flexibly for any reason. Ideally, all lab members will have at least a few hours each week to overlap with Tristan in order to stay in touch, but it is the policy of the lab that every member is already self-motivated and doesn't need to work a traditional 9 to 5 day in order to meet their goals.
@@ -36,7 +36,7 @@ This section is largely copied from [Whitaker's lab Code of Conduct](https://git
 
 # Technology
 
-## Core Tools
+## Core tools
 
 Get familiar with the following technologies asap:
 * [bash](https://www.gnu.org/software/bash) scripting (on Linux or OSX): https://www.shellscript.sh
@@ -82,7 +82,7 @@ Once a release is ready:
 
 See examples in [/bin](https://github.com/big-data-lab-team).
 
-# Scientific Methodology
+# Scientific methodology
 
 ## Reading
 Key list of references to be completed.
