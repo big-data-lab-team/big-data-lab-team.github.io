@@ -49,7 +49,7 @@ Get familiar with the following technologies asap:
 ## Coding
 
 Code is first-class citizen in the lab. It is the primary output of
-your research. As such it requires first-class attention.
+your research.
 
 Any code 
 in the lab is by default:
