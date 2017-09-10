@@ -1,7 +1,24 @@
 Welcome to the lab! Here are some information, resources and tips to
 help you get started.
 
-[TOC]
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Lab culture](#lab-culture)
+  - [Core values](#core-values)
+  - [Communication and interactions](#communication-and-interactions)
+  - [Code of conduct](#code-of-conduct)
+  - [Academic integrity](#academic-integrity)
+- [Technology](#technology)
+  - [Core tools](#core-tools)
+  - [Coding](#coding)
+- [Scientific methodology](#scientific-methodology)
+  - [Reading](#reading)
+  - [Writing](#writing)
+  - [Experimentation](#experimentation)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # Lab culture
 
