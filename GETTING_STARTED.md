@@ -1,6 +1,8 @@
 Welcome to the lab! Here are some information, resources and tips to
 help you get started.
 
+[TOC]
+
 # Lab culture
 
 ## Core values
