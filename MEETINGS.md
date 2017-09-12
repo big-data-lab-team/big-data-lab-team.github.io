@@ -15,3 +15,8 @@ limited to 1 hour maximum, unless otherwise specified.
 * Schedule:
   * `sim` and `sam` [1 hour max]: every Thursday at 9am.
   * `boutiques` [15 min max]: every Friday at 3pm.
+
+# One-to-one meetings
+
+* To discuss your own progress and objectives.
+* Custom schedule, talk with Tristan. 
