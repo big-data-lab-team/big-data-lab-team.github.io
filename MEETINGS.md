@@ -5,7 +5,9 @@ limited to 1 hour maximum, unless otherwise specified.
 
 * Occur monthly.
 * All lab members should attend.
-* Next occurrence: *October 6th, 2pm*.
+* Next occurrences:
+   * *October 6th, 2pm*: Summary of Summer World Tour (Greg, Valerie, Lalet, Tristan)
+   * *November 3rd, 2pm*: short presentations, on-going work (Soudabeh, + any volunteer)
 
 # Software meetings
 
