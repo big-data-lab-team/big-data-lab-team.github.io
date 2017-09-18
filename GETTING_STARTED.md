@@ -117,7 +117,7 @@ In other words, think of all possible causes that might corrupt your results: ba
 
 ## Core values
 
-Content-wise, the lab is committed to the following values:
+The lab is committed to the following values:
 1. High quality is
 preferable to high quantity.
 2. Technical quality is a requirement to
@@ -144,4 +144,4 @@ This section is largely copied from [Whitaker's lab Code of Conduct](https://git
 ## Academic integrity
 * Data, code and text sharing through Git repositories hosted on GitHub is a good way to protect us against [scientific fraud](https://en.wikipedia.org/wiki/Scientific_misconduct). Having others regularly reviewing your own PRs to your own repositories is even better.
 * Reusing text or code from others' work is fine (even encouraged) as long as the source is properly credited. Omitting to cite the source is plagiarism.
-* Data fabrication or falsification is evil. Don't even think about it. If your data looks strange, don't delete or omit it. Repeat the experiment and try to understand what is going on, you will learn more. If your graph is missing a point or two and the submission deadline is coming too soon, let the graph be incomplete. You will feel better and it will improve the paper. There is no such things as a good or a bad result, there are just results.
+* Data fabrication or falsification is evil. Don't even think about it. If your data looks strange, don't delete or omit it. Repeat the experiment and try to understand what is going on, you will learn more. If your graph is missing a point or two and the submission deadline is coming too soon, let the graph be incomplete. You will feel better and it will improve the paper. There is no such thing as a good or a bad result, there are just results.
