@@ -96,7 +96,7 @@ Key list of references to be completed.
      * See example [here](https://github.com/big-data-lab-team/paper-sequential-split-merge).
      * Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).
 
-* Useful books and references:
+* Useful books and references about writing:
    * [How to Write a Lot](https://www.amazon.ca/How-Write-Lot-Practical-Productive/dp/1591477433), Paul J. Silvia.
    * [The Elements of Style](https://www.amazon.ca/Elements-Style-William-Strunk-Jr/dp/020530902X), Wiliam Strunk Jr and E.B. White.
 
