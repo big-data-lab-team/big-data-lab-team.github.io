@@ -80,18 +80,25 @@ Key list of references to be completed.
 + Neuroinformatics
 
 ## Writing
-Writing helps structure ideas and is required to communicate our scientific
-output in papers or theses. But good writing takes time, practice, and good tools.
-* Write every day, even if it's only a few lines. Suggestions:
+
+* Adopt a writing schedule as soon as possible and comply to it. Suggestion to start: 4 hours per week.
+* Suggestions on what to write:
    * Write your own summary any time you read a paper.
    * Write a few paragraphs on your current work or ideas.
+   * Outline your next paper or thesis.
 * Create detailed outlines of important documents (papers, theses) as early as possible.
-* Write with Latex by default, possibly with Google Docs in case heavy collaboration is expected (e.g., brainstorming document).
-* Create a Git repository for papers, containing:
-   * The Latex/Bibtex source.
-   * Any script (e.g. [Gnuplot](http://www.gnuplot.info)) and data required to reproduce Figures. You might loose a few hours cleaning up your scripts but it will save you days when you need to update your manuscript.
-   * See example [here](https://github.com/big-data-lab-team/paper-sequential-split-merge).
-* Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).
+
+* Tools
+   * Use Latex by default. Use Google Docs when heavy collaboration is expected (e.g., brainstorming document).
+   * Create a Git repository for papers and theses, containing:
+     * The Latex/Bibtex source.
+     * Any script (e.g. [Gnuplot](http://www.gnuplot.info)) and data required to reproduce Figures. You might loose a few hours cleaning up your scripts but it will save you days when you need to update your manuscript.
+     * See example [here](https://github.com/big-data-lab-team/paper-sequential-split-merge).
+     * Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).
+
+* Useful books and references:
+   * [How to Write a Lot](https://www.amazon.ca/How-Write-Lot-Practical-Productive/dp/1591477433), Paul J. Silvia.
+   * [The Elements of Style](https://www.amazon.ca/Elements-Style-William-Strunk-Jr/dp/020530902X), Wiliam Strunk Jr and E.B. White.
 
 ## Experimentation
 
@@ -115,7 +122,7 @@ Content-wise, the lab is committed to the following values:
 preferable to high quantity.
 2. Technical quality is a requirement to
 scientific quality.
-3. Openness creates better content.
+3. Openness leads to better content.
 
 The target lab culture is to promote frequent informal interactions,
 flexible work hours, academic integrity, gender equality, cultural
