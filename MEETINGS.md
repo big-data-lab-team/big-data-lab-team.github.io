@@ -14,7 +14,7 @@ limited to 1 hour maximum, unless otherwise specified.
 * All contributors of software project should attend. 
 * Schedule:
   * `sim` and `sam` [1 hour max]: every Thursday at 9am.
-  * `boutiques` [15 min max]: every Friday at 3pm.
+  * `boutiques` [15 min max]: every Thursday at 10am: 
 
 # One-to-one meetings
 
