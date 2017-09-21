@@ -28,7 +28,9 @@ help you get started.
 Get familiar with the following technologies asap:
 * [bash](https://www.gnu.org/software/bash) scripting (on Linux or OSX): https://www.shellscript.sh
 * [Docker](http://www.docker.io): https://docs.docker.com/get-started
-* [Git](https://git-scm.com): https://rogerdudler.github.io/git-guide/
+* [Git](https://git-scm.com): 
+  * https://try.github.io
+  * https://rogerdudler.github.io/git-guide
 * [GitHub](http://github.com)
 * [Latex](https://www.latex-project.org) and [Bibtex](http://www.bibtex.org)
 * ssh
@@ -78,9 +80,9 @@ Key list of references to be completed:
   *  [Reproducibility of neuroimaging analyses across operating systems](http://journal.frontiersin.org/article/10.3389/fninf.2015.00012/full), T. Glatard, L. B. Lewis, R. Ferreira da Silva, R. Adalat, N. Beck, C. Lepage, P. Rioux, M. Rousseau, T. Sherif, E. Deelman, Najmeh Khalili-Mahani, Alan C. Evans, Frontiers in Neuroinformatics, vol. 9, no. 12, 2015.
   * [The Effects of FreeSurfer Version, Workstation Type, and Macintosh Operating System Version on Anatomical Volume and Cortical Thickness Measurements](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365894), Ed H. B. M. Gronenschild, Petra Habets, Heidi I. L. Jacobs, Ron Mengelers, Nico Rozendaal, Jim van Os, and Machteld Marcelis.
   * [Reprozip: Computational reproducibility with ease.](http://dl.acm.org/citation.cfm?id=2899401), Chirigati, Fernando, et al, Proceedings of the 2016 International Conference on Management of Data. ACM, 2016.
-
 * Infrastructure
-  Cloud, Spark.
+  * [Software architectures to integrate workflow engines in science gateways](http://linkinghub.elsevier.com/retrieve/pii/S0167739X17300249), Tristan Glatard, Marc-Étienne Rousseau, Sorina Camarasu-Pop, Reza Adalat, Natacha Beck, Samir Das, Rafael Ferreira da Silva, Najmeh Khalili-Mahani, Vladimir Korkhov, Pierre-Olivier Quirion, Pierre Rioux, Sı́lvia D. Olabarriaga, Pierre Bellec, Alan C. Evans, Future Generation Computer Systems, Volume 75, October 2017, Pages 239-255. 
+  * Cloud, Spark.
 * Neuroinformatics
 
 ## Writing
