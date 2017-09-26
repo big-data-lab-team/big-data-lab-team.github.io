@@ -28,6 +28,7 @@ help you get started.
 Get familiar with the following technologies asap:
 * [bash](https://www.gnu.org/software/bash) scripting (on Linux or OSX): https://www.shellscript.sh
 * [Docker](http://www.docker.io): https://docs.docker.com/get-started
+* [Python](https://www.python.org/about/gettingstarted)
 * [Git](https://git-scm.com): 
   * https://try.github.io
   * https://rogerdudler.github.io/git-guide
