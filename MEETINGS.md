@@ -16,7 +16,7 @@ limited to 1 hour maximum, unless otherwise specified.
 * All contributors of software project should attend. 
 * Schedule:
   * `sim` and `sam` [1 hour max]: every Thursday at 9am.
-  * `boutiques` [15 min max]: every Thursday at 10am.
+  * `boutiques` [30 min max]: every Thursday at 10am. Online, at https://zoom.us/j/624652652
   * `repro-tools` [30' max]: every Thursday at 10:45am. 
 
 # One-to-one meetings
