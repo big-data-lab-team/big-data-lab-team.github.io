@@ -7,7 +7,7 @@ limited to 1 hour maximum, unless otherwise specified.
 * All lab members should attend.
 * Next occurrences:
    * *October 6th, 2pm*: Summary of Summer World Tour (Greg, Valerie, Lalet, Tristan)
-   * *November 3rd, 2pm*: short presentations, on-going work (Soudabeh, + any volunteer)
+   * *November 10th, 2pm* (change of date): short presentations, on-going work (Soudabeh, + any volunteer)
 
 # Software meetings
 
