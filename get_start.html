@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Getting Started</title>
+    </head>
+    <body> 
+    <div id="header"></div><br />
+ 
+    <div class="container">
+        <div class="col-md-9">
+            <h3>Welcome to the lab! Here are some information, resources and tips to help you get started.</h3>
+                
+            <div class="row tall-row">
+                <div class="col-lg-12">
+                    <h1 id="technology"> Technology </h1>
+                    <hr>
+                </div>
+            </div>
+       
+            <h2 id="core-tools">Core tools</h2>
+            
+            <p>Get familiar with the following technologies asap:</p>  
+            <ul>
+                <li><a href="https://www.gnu.org/software/bash">Bash scripting</a> (on Linux or OSX): 
+                    <a href="https://www.shellscript.sh">https://www.shellscript.sh</a></li>
+                
+                <li><a href="http://www.docker.io">Docker</a>: 
+                    <a href="https://docs.docker.com/get-started">https://docs.docker.com/get-started</a></li>
+                
+                <li><a href="https://www.python.org/about/gettingstarted">Python</a>: 
+                    <a href="https://github.com/neurohackweek/python-for-scientists">https://github.com/neurohackweek/python-for-scientists</a></li>
+                <li><a href="https://git-scm.com">Git</a></li>
+                    <ul>
+                        <a href="https://try.github.io"><li>https://try.github.io</li></a>
+                        <a href="https://rogerdudler.github.io/git-guide"><li>https://rogerdudler.github.io/git-guide</li></a>
+                    </ul>
+                <li><a href="http://github.com">GitHub</a></li>
+                <li><a href="https://www.latex-project.org">Latex</a> and <a href="http://www.bibtex.org">Bibtex</a></li>
+                <li>SSH</li>
+            </ul>
+
+    
+            <h2 id="coding">Coding</h2>
+            <p>Code is first-class citizen in the lab. It is the primary output of your research.</p>
+            <p>Any code in the lab is by default:</p>
+            <ul>
+                <li>In a Git repository.</li>
+                <li>On GitHub.</li>
+                <li>Hosted under the <a href="https://github.com/big-data-lab-team">/bin</a> organization.</li>
+                <li>Licensed under GPL-3.0 (<a href="https://www.gnu.org">Free Software</a> is good) or MIT (for a library).</li>
+                <li>Written in Python.</li>
+            </ul>
+            <p> To contribute to a code base (including your own project):</p>
+            <ul>
+                <li>Fork the repository on GitHub.</li>
+                <li>Push commits to your fork.</li>
+                <li> Make Pull Requests (PRs) to the base repository.</li>
+            </ul>
+            <p>Before releasing a repository, make it usable:</p>
+            <ul>
+                <li>Add a demo (data + expected answer) to demonstrate the main functionality.</li>
+                <li>Write a README.md file.</li>
+                <li>Make a 1-line installation procedure using pip, gem, cmake or autotools.</li>
+                <li>Document all the user-facing functions.</li>
+                <li>Write tests using pytest.</li>
+                <li>Configure continuous integration in the repository.</li>
+                <li>Push a container image to DockerHub (only if relevant).</li>
+                <li>Add badges to README.md (if relevant).</li>
+            </ul>
+            <p>Once a release is ready:</p>
+            <ul>
+                <li>Tag it in the Git repository.</li>
+                <li>Write release notes on GitHub.</li>
+                <li>Create a develop branch. After the first release, the master branch will always contain the latest release; develop will contain non-released commits.</li>
+            </ul>
+            
+            <p>See examples in <a href="https://github.com/big-data-lab-team">/bin</a>.</p>
+    
+ 
+            <div class="row tall-row">
+                <div class="col-lg-12">
+                    <h1 id="scientific-methodology">Scientific methodology</h1>
+                    <hr>
+                </div>
+            </div>
+            
+            <h2 id="reading">Reading</h2>
+            <p>Key list of references to be completed:</p>
+            <ul>
+                <li>Interoperability</li>
+                <li>Reproducibility</li>
+                <ul>
+                    <li> <a href="http://journal.frontiersin.org/article/10.3389/fninf.2015.00012/full">Reproducibility of neuroimaging analyses across operating systems</a>, T. Glatard, L. B. Lewis, R. Ferreira da Silva, R. Adalat, N. Beck, C. Lepage, P. Rioux, M. Rousseau, T. Sherif, E. Deelman, Najmeh Khalili-Mahani, Alan C. Evans, Frontiers in Neuroinformatics, vol. 9, no. 12, 2015.</li>
+
+                    <li><a href="http://www.pnas.org/content/113/28/7900.full">Cluster Failure: Why fMRI inferences for spatial extent have inflated false-positive rates</a>, Eklund A, Nichols TE, Knutsson H. Proceedings of the National Academy of Sciences. 2016 Jun 28:201602413.</li>
+
+                    <li> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3365894">The Effects of FreeSurfer Version, Workstation Type, and Macintosh Operating System Version on Anatomical Volume and Cortical Thickness Measurements</a>, Ed H. B. M. Gronenschild, Petra Habets, Heidi I. L. Jacobs, Ron Mengelers, Nico Rozendaal, Jim van Os, and Machteld Marcelis.</li>
+                    <li> <a href="http://dl.acm.org/citation.cfm?id=2899401">Reprozip: Computational reproducibility with ease</a>, Chirigati, Fernando, et al, Proceedings of the 2016 International Conference on Management of Data. ACM, 2016.</li>
+                </ul>
+                <li>Infrastructure</li>
+                <ul>
+                    <li><a href="http://linkinghub.elsevier.com/retrieve/pii/S0167739X17300249">Software architectures to integrate workflow engines in science gateways</a>, Tristan Glatard, Marc-Étienne Rousseau, Sorina Camarasu-Pop, Reza Adalat, Natacha Beck, Samir Das, Rafael Ferreira da Silva, Najmeh Khalili-Mahani, Vladimir Korkhov, Pierre-Olivier Quirion, Pierre Rioux, Sı́lvia D. Olabarriaga, Pierre Bellec, Alan C. Evans, Future Generation Computer Systems, Volume 75, October 2017, Pages 239-255.</li>
+                    <li>Cloud, Spark.</li>
+                </ul>
+                <li>Neuroinformatics</li>
+            </ul>
+
+            <h2 id="writing">Writing</h2>
+            <ul>
+                <li>Adopt a writing schedule as soon as possible and comply to it. Suggestion to start: 4 hours per week.</li>
+                <li>Suggestions on what to write:</li>
+                <ul>
+                    <li>Write your own summary any time you read a paper.</li>
+                    <li>Write a few paragraphs on your current work or ideas.</li>
+                    <li>Outline your next paper or thesis.</li>
+                </ul>
+                <li>Create detailed outlines of important documents (papers, theses) as early as possible.</li>
+                <li>Tools</li>
+                <ul>
+                    <li>Use Latex by default. Use Google Docs when heavy collaboration is expected (e.g., brainstorming document).</li>
+                    <li>Create a Git repository for papers and theses, containing:</li>
+                    <ul>
+                        <li>The Latex/Bibtex source.</li>
+                        <li> Any script (e.g. <a href="http://www.gnuplot.info/">Gnuplot</a>) and data required to reproduce Figures. You might loose a few hours cleaning up your scripts but it will save you days when you need to update your manuscript.</li>
+                        <li>See example <a href="https://github.com/big-data-lab-team/paper-sequential-split-merge">here</a>.</li>
+                        <li> Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).</li>
+                    </ul>
+                    <li>Useful books and references about writing:</li>
+                    <ul>
+                        <li><a href="https://www.amazon.ca/How-Write-Lot-Practical-Productive/dp/1591477433">How to Write a Lot</a>, Paul J. Silvia.</li>
+                        <li><a href="https://www.amazon.ca/Elements-Style-William-Strunk-Jr/dp/020530902X">The Elements of Style</a>, Wiliam Strunk Jr and E.B. White.</li>
+                    </ul>
+                </ul>
+            </ul>
+
+            <h2 id="experimentation">Experimentation</h2>
+            <p>Most of your papers will be based on experiments conducted with your developed software. Be meticulous and patient, it takes time to get a good experimental setup. Make yours this quote by David Donoho et al (2009):</p>
+            
+            <blockquote>
+            the scientific method's central motivation is the ubiquity of error - <br><br>
+            
+            the awareness that mistakes and self-delusion can creep in absolutely anywehere <br><br>
+            
+            and that the scientits' effort is primarily expended in recognizing and rooting out error. <br>
+            </blockquote>
+            <p> In other words, think of all possible causes that might corrupt your results: background tasks running on computers, software bugs, data corruption, etc</p>
+           
+            <div class="row tall-row">
+                <div class="col-lg-12">
+                    <h1 id="lab-culture"> Lab culture </h1>
+                    <hr>
+                </div>
+            </div>
+        
+            <h2 id="core-values">Core values</h2>
+            <p>The lab is committed to the following values:</p>
+            <ol>
+                <li>High quality is preferable to high quantity.</li>
+                <li>Technical quality is a requirement to scientific quality.</li>
+                <li>Openness leads to better content.</li>
+            </ol>
+            <p> The target lab culture is to promote frequent informal interactions, flexible work hours, academic integrity, gender equality, cultural diversity and ... having fun doing research!</p>
+            
+        
+            <h2 id="communication-and-interactions">Communication and interactions</h2>
+            <ul>
+                <li>Never hesitate to ask a question to anyone.</li>
+                <li>Register to <a href="https://big-data-lab-team.slack.com/">Slack</a> (in the future me might use <a href="https://about.mattermost.com/">Mattermost</a> instead).</li>
+                <li>Share information with others in the lab. Including ideas, code snippets, technical tips, etc Your co-workers are not your competitors, you are on the same side.</li>
+                <li>Communicate regularly with Tristan. On Slack, by email or by requesting a meeting whenever required. Don't let any issue block your work or bother you for too long without talking about it.</li>
+                <li> Attend hackathons, in particular those organized by <a href="http://brainhack.org/">BrainHack</a> in Montreal. Use hackathons to demonstrate your project, collect feedback on it, and stay up-to-date on technology.</li>
+            </ul>
+
+            <h2 id="code-of-conduct"> Code of conduct</h2>
+            <p>This section is largely copied from <a href="https://github.com/WhitakerLab/Onboarding/blob/master/CODE_OF_CONDUCT.md">Whitaker's lab Code of Conduct.</a></p>
+            <ul>
+                <li>Harassment by and/or of members of our community in any form will not be tolerated. Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of discussions, inappropriate physical contact, and unwelcome sexual attention.</li>
+                <li>Work hours: The hours that members of the lab choose to work is up to them. We are each welcome to send work-related emails, pull requests or Slack messages over the weekend or late at night, but no lab members are required to reply to them outside of their typical work hours. Lab members are welcome to work flexibly for any reason. Ideally, all lab members will have at least a few hours each week to overlap with Tristan in order to stay in touch, but it is the policy of the lab that every member is already self-motivated and doesn't need to work a traditional 9 to 5 day in order to meet their goals.</li>
+                <li>If you experience any challenges of any kind related those topics, please contact Tristan. All communication will be treated as confidential.</li>
+            </ul>
+
+            <h2 id="academic-integrity">Academic integrity</h2>
+            <ul>
+                <li>Data, code and text sharing through Git repositories hosted on GitHub is a good way to protect us against <a href="https://en.wikipedia.org/wiki/Scientific_misconduct">scientific fraud</a>. Having others regularly reviewing your own PRs to your own repositories is even better.</li>
+                <li>Reusing text or code from others' work is fine (even encouraged) as long as the source is properly credited. Omitting to cite the source is plagiarism.</li>
+                <li>Data fabrication or falsification is evil. Don't even think about it. If your data looks strange, don't delete or omit it. Repeat the experiment and try to understand what is going on, you will learn more. If your graph is missing a point or two and the submission deadline is coming too soon, let the graph be incomplete. You will feel better and it will improve the paper. There is no such thing as a good or a bad result, there are just results.</li>
+            </ul>
+        </div>
+
+        <!-- right floating side bar  -->
+        <div class="col-md-3">
+            <div class="sidebar-nav-fixed pull-right affix sidebar-custom">
+                    <ul>
+                        <a href="#technology"><li>Technology</li></a> 
+                        <ul>
+                            <a href="#core-tools"><li>Core tools</li></a> 
+                            <a href="#coding"><li>Coding</li></a> 
+                        </ul>
+                        <a href="#scientific-methodology"><li>Scientific methodology</li></a> 
+                        <ul>
+                            <a href="#reading"><li>Reading</li></a> 
+                            <a href="#writing"><li>Writing</li></a> 
+                            <a href="#experimentation"><li>Experimentation</li></a> 
+                        </ul>
+                        <a href="#lab-culture"><li>Lab culture</li></a> 
+                        <ul>
+                            <a href="#core-values"><li>Core values</li></a> 
+                            <a href="#communication-and-interactions"><li>Communication and interactions</li></a> 
+                            <a href="#code-of-conduct"><li>Code of conduct</li></a> 
+                            <a href="#academic-integrity"><li>Academic integrity</li></a> 
+                        </ul>  
+                    </ul>
+            </div>
+        </div>
+        
+    </div>
+ 
+    
+
+    <div id="footer"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+    </script>
+    </body>
+      
+    
+</html>
