@@ -1,1 +1,1 @@
-This page has moved [here](file:///home/glatard/code/bin.github.io/get_start.html)
+This page has moved [here](https://big-data-lab-team.github.io/get_start.html)
