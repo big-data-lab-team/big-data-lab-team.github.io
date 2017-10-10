@@ -44,8 +44,9 @@ li {
 .logo-space {
     padding-left: 20px;
 }
-
 .profile-img img{
+    object-fit: cover;
+    overflow: hidden;
     width: 265px;
     height: 249px;
     padding-top:23px;
