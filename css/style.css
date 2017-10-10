@@ -1,6 +1,8 @@
 body {
     letter-spacing:0.3px;
-    padding-bottom:60px;
+    adding-bottom:60px;
+    background-image: url("../images/background.jpg");
+    background-size:cover;
 }
 
 a:link {
@@ -48,7 +50,7 @@ li {
     object-fit: cover;
     overflow: hidden;
     width: 265px;
-    height: 249px;
+    height: 249px; 
     padding-top:23px;
 }
 .profile-text {
