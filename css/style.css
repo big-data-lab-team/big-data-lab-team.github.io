@@ -1,7 +1,12 @@
 body {
     letter-spacing:0.3px;
-    adding-bottom:60px;
-    background-image: url("../images/background.jpg");
+    padding-bottom:60px;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/background.jpg");
     background-size:cover;
 }
 
@@ -46,8 +51,9 @@ li {
 .logo-space {
     padding-left: 20px;
 }
-
 .profile-img img{
+    object-fit: cover;
+    overflow: hidden;
     width: 265px;
     height: 249px; 
     padding-top:23px;
@@ -71,6 +77,7 @@ li {
 .publication-logo a img{
     width:25px;
     height:25px;
+    margin: 15px 0 20px 0;
 }
 .funding-logos img{
     margin-top: 40px;
