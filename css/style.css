@@ -54,8 +54,8 @@ li {
 .profile-img img{
     object-fit: cover;
     overflow: hidden;
-    width: 265px;
-    height: 249px; 
+    width: 250px;
+    height: 250px; 
     padding-top:23px;
 }
 .profile-text {
