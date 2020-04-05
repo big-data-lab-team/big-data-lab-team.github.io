@@ -214,8 +214,22 @@
                     <ul>
                         <li>The Latex/Bibtex source.</li>
                         <li> Any script (<a href="https://matplotlib.org">matplotlib</a> strongly recommended) and data required to reproduce Figures. You might loose a few hours cleaning up your scripts but it will save you days when you need to update your manuscript.</li>
-                        <li>See example <a href="https://github.com/big-data-lab-team/paper-sequential-split-merge">here</a>.</li>
+                        <li> See example <a href="https://github.com/big-data-lab-team/paper-sequential-split-merge">here</a>.</li>
                         <li> Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).</li>
+                    </ul>
+                    <li>General recommendations</li>
+                    <ul>
+                        <li>Create vectorial figures using a vectorial format (pdf, svg, ps) rather than a bitmap one (png, jpeg).</li>
+                        <li>Create a single script to generate all the figures in the paper. This script shouldn't have any parameter.
+                            In this situation, it is ok to hard-code file paths relative to the root of the Git repo. Don't use absolute paths, they will 
+                            work only on your computer. 
+                        </li>
+                        <li>Don't include figures in the Git repo, as it would rapidly make it bulky. Instead, write clear instructions on how to generate them.</li>
+                        <li>Don't include (too much) binary data in the Git
+                        repo. If your scripts require binary data, put it
+                        on <a href="http://zenodo.org">Zenodo</a> and use
+                        Zenodo's permanent link in your scripts. Don't use
+                        your personal web/ftp server, Dropbox or Google Drive.</li>
                     </ul>
                     <li>Useful books and references about writing:</li>
                     <ul>
