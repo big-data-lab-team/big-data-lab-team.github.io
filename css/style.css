@@ -24,6 +24,10 @@ li {
     font-size: 16px;
     padding: 5px;
 }
+.index_page{
+	background-image: url("../images/cluster/amber.jpg");
+	background-size: cover;
+}
 .tall-row {
     margin-top: 40px;
 }
