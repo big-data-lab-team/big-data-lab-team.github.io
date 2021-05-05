@@ -97,7 +97,26 @@
             username to Slack channel <code>#cluster</code>.</li>
             <li>The login node is <code>rs-loy-slashbin.concordia.ca</code>, a.k.a <code>ct01</code>.
             ssh access is available from the Concordia wireless and
-            wired networks.</li>
+            wired networks.
+            </br> An example configuration to ssh into the cluster with a proxy through Concordia network is depicted below.
+            You can copy it into your <span style="color: crimson">~/.ssh/config</span> file.
+            <pre style="background:#282c34" class="line-numbers">
+<code># ~/.ssh/config
+
+Host <span style="color: #98c378">slashbin</span>
+    Hostname <span style="color: #98c378">rs-loy-slashbin.concordia.ca</span>
+    User <span style="color: #98c378">CLUSTER_USERNAME</span>  # TODO Change to match yours
+    ProxyCommand <span style="color: #98c378">ssh -q -W %h:%p encs</span>
+    IdentityFile <span style="color: #98c378">~/.ssh/slashbin</span>  # TODO Change to match yours
+
+Host <span style="color: #98c378">encs</span>
+    Hostname <span style="color: #98c378">login.encs.concordia.ca</span>
+    DynamicForward <span style="color: #98c378">10101</span>
+    User <span style="color: #98c378">ENCS_USERNAME</span>  # TODO Change to match yours
+    IdentityFile <span style="color: #98c378">~/.ssh/encs</span>  # TODO Change to match yours
+</code>
+</pre>
+            </li>
             <li>Compute nodes are accessed through the <code>sbatch</code>
             and <code>salloc</code> commands. Read the man pages if you
             never used them.</li>
