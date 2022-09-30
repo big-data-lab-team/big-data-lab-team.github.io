@@ -1,0 +1,88 @@
+body {
+    letter-spacing:0.3px;
+    padding-bottom:60px;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/background.jpg");
+    background-size:cover;
+}
+
+a:link {
+    font-weight: bold;
+}
+p {
+    font-size: 16px;
+}
+
+ul {
+    padding:10px 10px 10px 20px;
+}
+li {
+    font-size: 16px;
+    padding: 5px;
+}
+.index_page{
+	background-image: url("../images/cluster/amber.jpg");
+	background-size: cover;
+}
+.tall-row {
+    margin-top: 40px;
+}
+.taller-row {
+    margin-top: 300px;
+}
+.less-tall-row {
+    margin-top: 20px;
+}
+
+.sidebar-custom {
+    color: #FDFDFB;
+    width: 230px;
+    border: 1px solid #c9a859;
+    padding: 3px 25px 3px 25px;
+    margin: 30px;
+}
+.sidebar-custom ul {
+    margin-bottom: 0px;
+    padding: 3px 3px 3px 10px;
+}
+.sidebar-custom li {
+    padding: 3px;
+}
+.logo-space {
+    padding-left: 20px;
+}
+.profile-img img{
+    object-fit: cover;
+    overflow: hidden;
+    width: 250px;
+    height: 250px; 
+    padding-top:23px;
+}
+.profile-text {
+    text-align: center;
+}
+.profile-text img {
+    width: 39px;
+    height:25px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+}
+.date {
+    display: block;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
+}
+.publication-logo a img{
+    width:25px;
+    height:25px;
+    margin: 15px 0 20px 0;
+}
+.funding-logos img{
+    margin-top: 40px;
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Getting Started</title>
+    </head>
+    <body>
+    <div id="header"></div><br />
+
+    <div class="container">
+        <div class="col-md-9">
+            <h3>Welcome to the lab! Here are some information, resources and tips to help you get started.</h3>
+
+            <div class="row tall-row">
+                <div class="col-lg-12">
+                    <h1 id="technology"> Technology </h1>
+                    <hr>
+                </div>
+            </div>
+
+            <h2 id="core-tools">Core tools</h2>
+
+            <p>Get familiar with the following technologies asap:</p>
+            <ul>
+                <li><a href="https://www.gnu.org/software/bash">Bash scripting</a> (on Linux or OSX):<br/>
+                    <a href="https://www.shellscript.sh">https://www.shellscript.sh</a><br/>
+                    <a href="https://www.pcwdld.com/bash-cheat-sheet">https://www.pcwdld.com/bash-cheat-sheet</a></li>
+
+                <li><a href="http://www.docker.io">Docker</a>:
+                    <a href="https://docs.docker.com/get-started">https://docs.docker.com/get-started</a></li>
+
+                <li><a href="https://www.python.org/about/gettingstarted">Python</a>:
+                    <ul>
+                        <li><a href="https://github.com/neurohackweek/python-for-scientists">First intro</a></li>
+                        <li><a href="https://www.dabapps.com/blog/introduction-to-pip-and-virtualenv-python">Virtual environments</a></li>
+                        <li> <a href="https://realpython.com/pipenv-guide/">Pipenv</a> (an easy method to setup a working environment) </li>
+                    </ul>
+                </li>
+                <li>C Language:
+                    <a href="https://www.tutorialspoint.com/cprogramming/index.htm">https://www.tutorialspoint.com/cprogramming/index.htm</a></li>
+                <li><a href="https://git-scm.com">Git</a></li>
+                    <ul>
+                        <a href="https://try.github.io"><li>https://try.github.io</li></a>
+                        <a href="https://rogerdudler.github.io/git-guide"><li>https://rogerdudler.github.io/git-guide</li></a>
+                    </ul>
+                <li><a href="http://github.com">GitHub</a></li>
+        <ul>
+            <li><a href="https://guides.github.com/">Guides</a></li>
+        </ul>
+                <li><a href="https://www.latex-project.org">Latex</a> and <a href="http://www.bibtex.org">Bibtex</a></li> (for managing Bibtex references, consider <a href="https://paperpile.com/app">Paperpile</a> or <a href="https://www.zotero.org/">Zotero</a>)
+                <li>SSH</li>
+                <li><a href="https://github.com/nipype/coco2019-training">Neuroimaging primer (Coastal Coding 2019)</a></li>
+            </ul>
+
+
+            <h2 id="coding">Coding</h2>
+            <p>Code is first-class citizen in the lab. It is the primary output of your research.</p>
+            <p>Any code in the lab is by default:</p>
+            <ul>
+                <li>In a Git repository.</li>
+                <li>On GitHub.</li>
+                <li>Hosted under the <a href="https://github.com/big-data-lab-team">/bin</a> organization.</li>
+                <li>Licensed under GPL-3.0 (<a href="https://www.gnu.org">Free Software</a> is good) or MIT (for a library).</li>
+                <li>Written in Python.</li>
+            </ul>
+            <p> To contribute to a code base (including your own project):</p>
+            <ul>
+                <li>Fork the repository on GitHub.</li>
+                <li>Push commits to your fork.</li>
+                <li> Make Pull Requests (PRs) to the base repository.</li>
+            </ul>
+            <p>Before releasing a repository, make it usable:</p>
+            <ul>
+                <li>Add a demo (data + expected answer) to demonstrate the main functionality.</li>
+                <li>Write a README.md file.</li>
+                <li>Make a 1-line installation procedure using pip, gem, cmake or autotools.</li>
+                <li>Document all the user-facing functions.</li>
+                <li>Write tests using pytest.</li>
+                <li>Configure continuous integration in the repository.</li>
+                <li>Push a container image to DockerHub (only if relevant).</li>
+                <li>Add badges to README.md (if relevant).</li>
+            </ul>
+            <p>Once a release is ready:</p>
+            <ul>
+                <li>Tag it in the Git repository.</li>
+                <li>Write release notes on GitHub.</li>
+                <li>Create a develop branch. After the first release, the master branch will always contain the latest release; develop will contain non-released commits.</li>
+            </ul>
+
+            <p>See examples in <a href="https://github.com/big-data-lab-team">/bin</a>.</p>
+        <h2 id="labcluster">Lab cluster</h2>
+        <p>The lab owns a compute cluster, primarily aimed for reproducible
+        performance measurements in a controlled environment. The cluster is currently administrated
+        by Val&eacute;rie and Tristan.
+
+        <h3>How to get access</h3>
+        <ul>
+            <li>To get access, post your ssh public key and desired
+            username to Slack channel <code>#cluster</code>.</li>
+            <li>The login node is <code>rs-loy-slashbin.concordia.ca</code>, a.k.a <code>ct01</code>.
+            ssh access is available from the Concordia wireless and
+            wired networks.
+            </br> An example configuration to ssh into the cluster with a proxy through Concordia network is depicted below.
+            You can copy it into your <span style="color: crimson">~/.ssh/config</span> file.
+            <pre style="background:#282c34" class="line-numbers">
+<code># ~/.ssh/config
+
+Host <span style="color: #98c378">slashbin</span>
+    Hostname <span style="color: #98c378">rs-loy-slashbin.concordia.ca</span>
+    User <span style="color: #98c378">CLUSTER_USERNAME</span>  # TODO Change to match yours
+    ProxyCommand <span style="color: #98c378">ssh -q -W %h:%p encs</span>
+    IdentityFile <span style="color: #98c378">~/.ssh/slashbin</span>  # TODO Change to match yours
+
+Host <span style="color: #98c378">encs</span>
+    Hostname <span style="color: #98c378">login.encs.concordia.ca</span>
+    DynamicForward <span style="color: #98c378">10101</span>
+    User <span style="color: #98c378">ENCS_USERNAME</span>  # TODO Change to match yours
+    IdentityFile <span style="color: #98c378">~/.ssh/encs</span>  # TODO Change to match yours
+</code>
+</pre>
+            </li>
+            <li>Compute nodes are accessed through the <code>sbatch</code>
+            and <code>salloc</code> commands. Read the man pages if you
+            never used them.</li>
+            <li>Compute nodes have no internet access: only the login node can access 
+                hosts outside of the cluster.
+            </li>
+        </ul>
+        <h3>Where to put data</h3>
+        <ul>
+            <li>Your home directory, located under <code>/home</code>, is
+            mounted on the compute nodes. It is of limited capacity and
+            should primarily be used to store config files, programs or
+            small data files.</li>
+            <li>Compute nodes have 6 local disks of size 450GB, mounted as
+            <code>/disk[0-5]</code>. You can use them as you wish during your
+            SLURM allocation, but data may be cleaned up once your
+            allocation expires.</li>
+            <li>A shared (Lustre) file system of higher capacity is being
+            configured.</li>
+            <li><strong>No back up is or will be configured</strong>. Disk failure resulting
+            in data loss may happen at any time. Make sure your important files are saved elsewhere.</li>
+        </ul>
+        <h3>DONTs</h3>
+        <ul>
+            <li><code>DONT</code> ssh directly from the login node to the
+            compute nodes. Always use SLURM to make a reservation.</li>
+            <li><code>DONT</code> make unreasonable reservations before
+            discussing them on <code>#cluster</code>. An unreasonable
+            reservation is longer than a week or requests more than 1
+            entire node.</li>
+            <li><code>DONT</code> run compute-intensive jobs on the login
+            node.</li>
+        </ul>
+    </p>
+        <h3>Gallery</h3>
+        <p>Overview (back)<br/>
+            From top to bottom: 
+            <ul>
+                <li>2 network switches: this will allow us
+                    to dedicate a network for an experiment while still allowing other users to use the cluster.</li>
+                <li>8 compute nodes: each with 6 SSDs, 32 cores and 256GB of RAM.</li>
+                <li>1 control node: login node with external network access.</li>
+                <li>1 control node: Lustre metadata server.</li>
+                <li>4 storage nodes: each with 12 HDDs and 2 SSDs.</li>
+            </ul>
+        <img src="images/cluster/overview.jpg" alt="overview" width=400/>
+        </p>
+        <p>Compute nodes (front):<br/>
+            <img src="images/cluster/compute-back.jpg" alt="compute-back" width=400/>
+            </p>
+        <p>Control and storage nodes (front):<br/>
+                <img src="images/cluster/storage-back.jpg" alt="storage-back" width=400/>
+                </p>
+        <h2 id="ccdb">Compute Canada</h2>
+            <p>Having a Compute Canada (CCDB) account gives you access to
+            storage and computing resources on Compute Canada, in
+            particular to our compute and storage allocation on beluga.computecanada.ca. Compute Canada 
+        is our primary platform for data processing.</p>
+            <p>To create a Compute Canada account:</p>
+        <ul>
+        <li>Register <a href="https://ccdb.computecanada.ca">here</a></li>
+               	<li>Review and accept the Compute Canada Acceptable Use Policy (AUP)</li>
+                <li>Enter your user information. Use Tristan's CCRI: bwf-484-02</li>
+                <li>Submit your application</li>
+                <li>After 2-3 days, confirm the Group Member's Application</li>
+        <li>You can find more details <a href="https://www.google.ca/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwj6k5O64ubXAhXM6YMKHVs4DwMQFggnMAA&url=http%3A%2F%2Fwww.hpc.mcgill.ca%2Fdownloads%2Fuser_meetings%2FMcGillHPC-UsersMeeting-Intro-Cedar-Graham-20170817.pdf&usg=AOvVaw2KstU9dBlVHJImzQFV2ApP">here</a></li>
+        <li>Once your Compute Canada account is active (see procedure
+        above), you can request for a cloud account with this <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSeU_BoRk5cEz3AvVLf3e9yZJq-OvcFCQ-mg7p4AWXmUkd5rTw/viewform">form</a>.
+        You may be contacted via email to ask for your PI. In that case,
+        reply to the email, indicate that Tristan (CCRI: bwf-484-02) is your
+        PI and asking for access to his allocation. Keep Tristan in cc of
+        this email. </li>
+            </ul>
+
+            <h3 id="pyspark">How to submit a PySpark job?</h3>
+             <ul>
+		     <li>Documentation is available <a href="https://docs.computecanada.ca/wiki/Apache_Spark">here</a></li>
+             </ul>
+            <h2 id="print">Printing</h2>
+            <p>
+                For all work-related printing needs, there's a printer available in EV 8.401 <br/>
+                It is possible to connect through this printer through USB (in the lab) or by
+                accessing the UI using the following IP or hostname through a web browser connected to the
+                internet using a wired Concordia connection:
+                <br/><br/>
+
+                <p>
+                <b>Hostname</b>: pr-tidal.encs.concordia.ca</br>
+                    <b>IP address</b>: 132.205.98.160
+                </p>
+            </p>
+            <div class="row tall-row">
+                <div class="col-lg-12">
+                    <h1 id="scientific-methodology">Scientific methodology</h1>
+                    <hr>
+                </div>
+            </div>
+
+            <h2 id="writing">Writing</h2>
+            <ul>
+                <li>Adopt a writing schedule as soon as possible and comply to it. Suggestion to start: 4 hours per week.</li>
+                <li>Suggestions on what to write:</li>
+                <ul>
+                    <li>Write your own summary any time you read a paper.</li>
+                    <li>Write a few paragraphs on your current work or ideas.</li>
+                    <li>Outline your next paper or thesis.</li>
+                </ul>
+                <li>Create detailed outlines of important documents (papers, theses) as early as possible.</li>
+                <li>Tools</li>
+                <ul>
+                    <li>Use Latex by default. Use Google Docs when heavy collaboration is expected (e.g., brainstorming document). <a href="https://github.com/big-data-lab-team/concordia-master-thesis-template">Here</a> is a Latex template for a Concordia Master's thesis.</li>
+                    <li>Create a Git repository for papers and theses, containing:</li>
+                    <ul>
+                        <li>The Latex/Bibtex source.</li>
+                        <li> Any script (<a href="https://matplotlib.org">matplotlib</a> strongly recommended) and data required to reproduce Figures. You might loose a few hours cleaning up your scripts but it will save you days when you need to update your manuscript.</li>
+                        <li> See example <a href="https://github.com/big-data-lab-team/paper-sequential-split-merge">here</a>.</li>
+                        <li> Push the Git repository on GitHub and encourage collaborators to fork/PRs (see Code section).</li>
+                    </ul>
+                    <li>General recommendations</li>
+                    <ul>
+                        <li>Create vectorial figures using a vectorial format (pdf, svg, ps) rather than a bitmap one (png, jpeg).</li>
+                        <li>Create a single script to generate all the figures in the paper. This script shouldn't have any parameter.
+                            In this situation, it is ok to hard-code file paths relative to the root of the Git repo. Don't use absolute paths, they will 
+                            work only on your computer. 
+                        </li>
+                        <li>Don't include figures in the Git repo, as it would rapidly make it bulky. Instead, write clear instructions on how to generate them.</li>
+                        <li>Don't include (too much) binary data in the Git
+                        repo. If your scripts require binary data, put it
+                        on <a href="http://zenodo.org">Zenodo</a> and use
+                        Zenodo's permanent link in your scripts. Don't use
+                        your personal web/ftp server, Dropbox or Google Drive.</li>
+                    </ul>
+                    <li>Useful books and references about writing:</li>
+                    <ul>
+                        <li><a href="https://www.amazon.ca/How-Write-Lot-Practical-Productive/dp/1591477433">How to Write a Lot</a>, Paul J. Silvia.</li>
+                        <li><a href="https://www.amazon.ca/Elements-Style-William-Strunk-Jr/dp/020530902X">The Elements of Style</a>, Wiliam Strunk Jr and E.B. White.</li>
+                        <li><a href="https://www.concordia.ca/students/success/learning-support/writing-assistance.html">Concordia Writing Assistance</a></li>
+                    </ul>
+                </ul>
+            </ul>
+
+
+          <h2 id="preprint">Pre-prints</h2> <p>All papers under review
+          must be submitted as pre-prints to arXiv or bioRxiv, unless
+          otherwise mentioned. A pre-print is a version of a paper that
+          is posted to a repository and can be accessible to readers
+          before its publication in a peer-reviewed journal or
+          conference. There are well-known pre-print databases such as
+          arXiv.org (for Computer Science, Engineering and many
+			other scientific fields), and bioRxiv (for Biology
+			researches). Pre-prints are important because they are:</p>
+			<ul>
+				<li>Free for both readers and authors.</li>
+				<li>Accessible to everyone while it is on the process
+				of reviewing by a journal which mostly takes several months.</li>
+				<li>Immediately citable. </li>
+				<li>Safely archived and gets a date stamped.</li>
+			</ul>
+			<p>To get familiar with the procedure of submitting a
+			paper to arXiv you might find <a href="https://www.youtube.com/watch?v=0i4C8yxbs48">this YouTube video</a> useful.
+			Please note that submitting paper as a PDFLaTeX wrapper,
+			using pdfpages, is not acceptable and it will end up to
+			<q>Incomplete</q> status after a long period of waiting for
+			getting the permanent identifier code. Instead,
+            create an archive containing your TeX source file with all the necessary
+			files for generating the PDF format of your paper, and upload
+			this archive to arXiv.</p>
+            
+            <p>
+                When you submit a paper, make sure to link the GitHub repository
+                for the project if relevant.
+            </p>
+            <img src="images/example_arxiv_link_github.png" alt="Example of
+             linking an arXiv paper to a GitHib repository."
+             style="width:500px;height:80px;"
+			 class="center"><br/>
+
+            <p> After receiving the permanent
+			arXiv identifier (e.g.: 1809.10139) by email, please update
+			the lab website (Pre-prints/submitted papers section under
+			the publications tab) with the arXiv number. </p> <img
+			src="images/example_arxiv_code.png" alt="Sample of adding
+			the arXive" style="width:500px;height:80px;"
+			class="center"> <br/>
+
+            <h2 id="experimentation">Experimentation</h2>
+            <p>Most of your papers will be based on experiments conducted with your developed software. Be meticulous and patient, it takes time to get a good experimental setup. Make yours this quote by David Donoho et al (2009):</p>
+
+            <blockquote>
+            the scientific method's central motivation is the ubiquity of error - <br><br>
+
+            the awareness that mistakes and self-delusion can creep in absolutely anywhere <br><br>
+
+            and that the scientist' effort is primarily expended in recognizing and rooting out error. <br>
+            </blockquote>
+            <p> In other words, think of all possible causes that might corrupt your results: background tasks running on computers, software bugs, data corruption, etc</p>
+
+            <h2 id="presentation">Presentation tips</h2>
+            <p>General tips to prepare slides for a presentation:</p>
+            <ul>
+                <li>Prepare a slide-by-slide outline of the presentation before doing the slides.</li>
+                <li>Prepare 1 slide per minute, including title and transition slides.</li>
+                <li>Use citations whenever relevant. In format [author et al, year], not [1]. Don't show a slide containing a list of references, this is useless.</li>
+                <li>Add figures wherever you can, they are usually way clearer than text.</li>
+                <li>Make sure that all figures have a caption.</li>
+                <li>Bullet points shouldn't span multiple lines.</li>
+                <li>Don't use more than 2 levels of bullet points.</li>
+                <li>Don't use more than 3 level-1 bullet points per slide.</li>
+                <li>Don't use more than 3 level-2 bullet points per level-1 bullet point.</li>
+                <li>Start every bullet point with a capital.</li>
+                <li>Make sure your slides have numbers.</li>
+                <li>On your first slide, add date, affiliation, logo, venue, etc</li>
+                <li>If you are presenting a paper (reading club) add title, authors, year, and publication venue of the paper on the first slide.</li>
+            </ul>
+            <p>General tips to prepare a poster for a presentation:</p>
+            <ul>
+                <li><a href="http://www.concordia.ca/it/services/plotting-encs.html">Free printing service</a> for all faculty, staff, and students in the Gina Cody School of Engineering and Computer Science.</li>
+                <li>Verify the conference instructions for poster size. If not
+mentioned, the most common poster size is 48"x36" (lxh).</li>
+                <li>Keep it simple and easy to read; i.e. stick to bullet point. </li>
+                <li>Include authors under the title</li>
+            </ul>
+
+            <div class="row tall-row">
+                <div class="col-lg-12">
+                    <h1 id="lab-culture"> Lab culture </h1>
+                    <hr>
+                </div>
+            </div>
+
+            <h2 id="core-values">Core values</h2>
+            <p>The lab is committed to the following values:</p>
+            <ol>
+                <li>High quality is preferable to high quantity.</li>
+                <li>Technical quality is a requirement to scientific quality.</li>
+                <li>Openness leads to better content.</li>
+            </ol>
+            <p> The target lab culture is to promote frequent informal interactions, personal freedom, academic integrity, gender equality, cultural diversity and ... having fun doing research!</p>
+
+
+            <h2 id="communication-and-interactions">Communication and interactions</h2>
+            <ul>
+                <li>Never hesitate to ask a question to anyone.</li>
+                <li>Register to <a href="https://big-data-lab-team.slack.com/">Slack</a> (in the future me might use <a href="https://about.mattermost.com/">Mattermost</a> instead).</li>
+                <li>Share information with others in the lab. It includes ideas, code snippets, technical tips, etc Your co-workers are not your competitors, you are on the same side.</li>
+                <li>Communicate regularly with Tristan. On Slack, by email or by requesting a meeting whenever required. Don't let any issue block your work or bother you for too long without talking about it.</li>
+                <li> Attend hackathons, in particular those organized by <a href="http://brainhack.org/">BrainHack</a> in Montreal. Use hackathons to demonstrate your project, collect feedback on it, and stay up-to-date on technology.</li>
+            </ul>
+
+            <h2 id="code-of-conduct"> Code of conduct</h2>
+            <p>This section is largely copied from <a href="https://github.com/WhitakerLab/Onboarding/blob/master/CODE_OF_CONDUCT.md">Whitaker's lab Code of Conduct.</a></p>
+            <ul>
+                <li>Harassment by and/or of members of our community in any form will not be tolerated. Harassment includes offensive verbal comments related to gender, sexual orientation, disability, physical appearance, body size, race, religion, sexual images in public spaces, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of discussions, inappropriate physical contact, and unwelcome sexual attention.</li>
+                <li>Work hours: The hours that members of the lab choose to work is up to them. We are each welcome to send work-related emails, pull requests or Slack messages over the weekend or late at night, but no lab members are required to reply to them outside of their typical work hours. Lab members are welcome to work flexibly for any reason. Ideally, all lab members will have at least a few hours each week to overlap with Tristan in order to stay in touch, but it is the policy of the lab that every member is already self-motivated and doesn't need to work a traditional 9 to 5 day in order to meet their goals.</li>
+                <li>If you experience any challenges of any kind related those topics, please contact Tristan. All communication will be treated as confidential.</li>
+            </ul>
+
+            <h2 id="academic-integrity">Academic integrity</h2>
+            <ul>
+                <li>Sharing data, code and text through Git repositories hosted on GitHub is a good way to protect us against <a href="https://en.wikipedia.org/wiki/Scientific_misconduct">scientific misconduct</a>.</li>
+                <li>Reusing text or code from others' work is fine (even encouraged) as long as the source is properly credited. Omitting to cite the source is plagiarism.</li>
+                <li>Data fabrication or falsification is evil. Don't even think about it. If your data looks strange, don't delete or omit it. Repeat the experiment and try to understand what is going on, you will learn more. If your graph is missing a point or two and the submission deadline is coming too soon, let the graph be incomplete. You will feel better and it will improve the paper. There is no such thing as a good or a bad result, there are just results.</li>
+            </ul>
+        </div>
+
+        <!-- right floating side bar  -->
+        <div class="col-md-3">
+            <div class="sidebar-nav-fixed pull-right affix sidebar-custom">
+                    <ul>
+                        <a href="#technology"><li>Technology</li></a>
+                        <ul>
+                            <a href="#core-tools"><li>Core tools</li></a>
+                            <a href="#coding"><li>Coding</li></a>
+                            <a href="#labcluster"><li>Lab Cluster</li></a>
+                            <a href="#ccdb"><li>Compute Canada</li></a>
+                            <a href="#print"><li>Printing</li></a>
+                        </ul>
+                        <a href="#scientific-methodology"><li>Scientific methodology</li></a>
+                        <ul>
+                            <a href="#writing"><li>Writing</li></a>
+                            <a href="#preprint"><li>Pre-prints</li></a>
+                            <a href="#experimentation"><li>Experimentation</li></a>
+                            <a href="#presentation"><li>Presentation tips</li></a>
+                        </ul>
+                        <a href="#lab-culture"><li>Lab culture</li></a>
+                        <ul>
+                            <a href="#core-values"><li>Core values</li></a>
+                            <a href="#communication-and-interactions"><li>Communication and interactions</li></a>
+                            <a href="#code-of-conduct"><li>Code of conduct</li></a>
+                            <a href="#academic-integrity"><li>Academic integrity</li></a>
+                        </ul>
+                    </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="footer"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+    </script>
+    </body>
+
+
+</html>
